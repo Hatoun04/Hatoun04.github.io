@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Evaluation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-section">
+                <div class="horizontal-line"></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/wide-logo.png" alt="Wide Marketplace Logo" id="logo">
+                    </a>
+                </div>
+                <div class="horizontal-line"></div>
+            </div>
+        </div>
+        
+        <!-- Links Section (Icons on the left, Navigation on the right) -->
+        <nav class="link-section">
+            <!-- Left section (Icons: Cart, Seller, User) -->
+            <div class="icons">
+                <a href="cart.html">
+                    <img src="images/cart.png" alt="Cart">
+                    <p>Cart</p>
+                </a>
+                <a href="sellerPage.html">
+                    <img src="images/user.png" alt="Seller">
+                    <p>Seller</p>
+                     </a>
+                
+                    <a href="userPage.html">
+                    <img src="images/user.png" alt="User">
+                    <p>User</p>
+                     </a>
+                
+            </div>
+            <!-- Right section (Navigation Links) -->
+            <div class="nav-links">
+                <ul> 
+                    <li><a href="electronics.html">ELECTRONICS</a></li>
+                    <li><a href="toys.html">TOYS</a></li>
+                    <li><a href="food.html">FOOD</a></li>     
+                </ul> 
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <br><br>
+        <div class="path">
+            <a href="index.html">Home page</a> ➔ <a href="userPage.html">User page</a> ➔ <a href="ProductEvaluationPage.html">Product Evaluation Page</a>
+            <div class="path-line"></div>
+        </div>
+
+        <!-- Product Evaluation Form -->
+        <div class="container-evaluation">
+
+            <form action="#" method="POST" onsubmit="return submitFeedback();">
+                <!-- Order Selection -->
+                <div class="form-group-evaluation">
+                    <label for="order">Order:</label>
+                    <select id="order" name="order" >
+                        <option value="" disabled selected>Choose an order</option>
+                        <option value="12345">
+                            Order Number: 12345 | Purchase Time: June 10, 2024, 4:30 | Total: SAR 5299
+                        </option>
+                        <option value="67890">
+                            Order Number: 67890 | Purchase Time: July 5, 2024, 10:45 | Total: SAR 67
+                        </option>
+                        <option value="11223">
+                            Order Number: 11223 | Purchase Time: August 1, 2024, 8:15 | Total: SAR 120
+                        </option>
+                        <option value="33445">
+                            Order Number: 33445 | Purchase Time: September 14, 2024, 11:00 | Total: SAR 887
+                        </option>
+                    </select>
+                </div>
+                
+                <div class="form-group-evaluation">
+                    <label for="product">Product:</label>
+                    <select id="product" name="product">
+                        <option value="" disabled selected>Choose a product</option>
+                        
+                        <option value="iphone-15">iPhone 15 - SAR 4500</option>
+                        <option value="airpods">AirPods - SAR 799</option>
+                
+                        <option value="bagels">Bagels - SAR 12</option>
+                        <option value="honey">Honey - SAR 37</option>
+                        <option value="potato-chips">Potato Chips - SAR 15</option>
+                
+                        <option value="lego">Lego - SAR 120</option>
+                
+                        <option value="airpods-max">AirPods Max - SAR 899</option>
+                        <option value="doll">Doll - SAR 89</option>
+                    </select>
+                </div>
+                
+                
+        
+                <hr style="background-color: rgb(221, 143, 177); border: none; height: 1px;">
+
+                <!-- Rating Section -->
+                 
+                <div class="form-group-evaluation">
+                    <br>
+                    
+                    <label>Product Evaluation:</label>
+                    <div class="rating-stars-evaluation" id="rating-stars">
+                        <span>Rate: </span>
+                        <span class="star" onclick="selectRating(1)">&#9734;</span>
+                        <span class="star" onclick="selectRating(2)">&#9734;</span>
+                        <span class="star" onclick="selectRating(3)">&#9734;</span>
+                        <span class="star" onclick="selectRating(4)">&#9734;</span>
+                        <span class="star" onclick="selectRating(5)">&#9734;</span>
+                        <input type="hidden" id="rating" name="rating" value="">
+                    </div>                        
+                </div>
+
+                <!-- Feedback Section -->
+                <div class="form-group-evaluation" style="margin-left: 15px;">
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback"></textarea>
+                </div>
+
+                <div class="form-group-evaluation photos-section-evaluation" style="margin-left: 15px;">
+                    <label class="add-photos-label">Add Photos:</label>
+                    <label class="add-photos-input" for="upload-image">Import</label>
+                    <input type="file" id="upload-image" name="upload-image">
+                </div>
+
+
+                <input type="submit" value="Submit" >
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+          <img src="images/wide-logo.png" alt="Logo" width="118">
+          <p>Your Future of Shopping Starts Wide.</p>
+        </div>
+        <div class="footer-section social-media">
+          <h3>SOCIAL MEDIA</h3>
+          <ul class="social-icons">
+            <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="images/insta.png" alt="Instagram"></a></li>
+            <li>@official_wide</li>
+                </ul>
+            </div>
+            <div class="footer-section contact-us">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li><a href="#"><img src="images/phone1.png" alt="Phone"> +123 165 788</a></li>
+                    <li><a href="mailto:@wide@gmail.com"><img src="images/email1.png" alt="Email"> wide@gmail.com</a></li>
+          </ul>
+          
+        </div>
+        
+      </footer>
+       <div class="bottom-bar">
+                  <p>  Terms and Conditions<br>
+      privacy policy<br>&copy; 2024 wide company . All rights reserved</p>
+              </div>
+
+    
+    <script src="PrudEvaScript.js"></script>
+
+</body>
+</html>

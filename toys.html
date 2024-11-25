@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toys page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-section">
+                <div class="horizontal-line"></div>
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="images/wide-logo.png" alt="Wide Marketplace Logo" id="logo">
+                  </a>
+             
+                </div>
+                <div class="horizontal-line"></div>
+            </div>
+        </div>
+    
+        <!-- Links Section (Icons on the left, Navigation on the right) -->
+        
+        <nav class="link-section">
+            <!-- Left section (Icons: Cart, Seller, User) -->
+            <div class="icons">
+              <a href="cart.html">
+        <img src="images/cart.png" alt="Cart">
+        <p>Cart</p>
+       </a>
+    
+       <a href="sellerPage.html">
+        <img src="images/user.png" alt="Seller">
+        <p>Seller</p>
+         </a>
+    
+        <a href="userPage.html">
+        <img src="images/user.png" alt="User">
+        <p>User</p>
+         </a>
+    
+    
+            </div>
+    
+            <!-- Right section (Navigation Links) -->
+         <div class="nav-links">
+          <ul> 
+            <li><a href="electronics.html">ELECTRONICS</a> </li>
+            <li><a href="toys.html">TOYS</a> </li>
+            <li> <a href="food.html">FOOD</a></li>     
+          </ul> 
+         </div>
+        </nav>
+
+
+         </header>
+
+         <main>
+
+            <br><br>
+            <div class="path">
+                <a href="index.html">Home page</a> ➔ <a href="toys.html">Toys page</a>
+                <div class="path-line"></div>
+            </div>
+
+        
+
+
+            <!--sort-->
+
+            <div class="sort-container">
+              <div class="sort-button">sort
+
+          <select id="sorting" class="sorting">
+              <!-- optgroup tag starts -->
+              <optgroup label="price">
+                  <option value="high to low">
+                      high to low
+                  </option>
+                  <option value="low to high">
+                      low to high
+                  </option>
+              
+              </optgroup>
+              <optgroup label="name">
+                  <option value="a-z">
+                      a-z
+                  </option>
+                  <option value="z-a">
+                      z-a
+                  </option>
+              </optgroup>
+              <!-- optgroup tag ends -->
+          </select>
+      </div>
+    </div>
+
+         </main>
+
+         <!--toys-->
+
+         <div id="picCategories" class="picCategories" >
+            <div class="categoriesOption">
+              <button class="add-to-cart-btn">Add to Cart</button>
+              <img src="images/car.webp" alt="car">
+              <h4>Car</h4>
+              <div class="priceAndCart">
+              <p class="priceCat">SAR 70</p>
+              <div class="quantity-controls">
+                <button class="minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="plus-btn">+</button>
+             </div>
+            </div>
+            </div>
+            
+            <div class="categoriesOption">
+              <button class="add-to-cart-btn">Add to Cart</button>
+              <img src="images/doll.webp" alt="doll">
+              <h4>Doll</h4>
+              <div class="priceAndCart">
+                    <p class="priceCat">SAR 89</p>
+                    <div class="quantity-controls">
+                      <button class="minus-btn">-</button>
+                      <span class="quantity">1</span>
+                      <button class="plus-btn">+</button>
+                   </div>
+                  </div>
+            </div>
+            <div class="categoriesOption ">
+              <button class="add-to-cart-btn">Add to Cart</button>
+                <img src="images/elephant.webp" alt="elephant">
+                <h4>Elephant</h4>
+                <div class="priceAndCart">
+                  <p class="priceCat">SAR 60</p>
+                  <div class="quantity-controls">
+                    <button class="minus-btn">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus-btn">+</button>
+                 </div>
+            </div>
+            </div>
+            <div class="categoriesOption ">
+              <button class="add-to-cart-btn">Add to Cart</button>
+              <img src="images/lego.webp" alt="lego">
+              <h4>Lego</h4>
+              <div class="priceAndCart">
+                 <p class="priceCat">SAR 120</p>
+                 <div class="quantity-controls">
+                  <button class="minus-btn">-</button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">+</button>
+               </div>
+            </div>
+            </div>
+
+            <div class="categoriesOption">
+              <button class="add-to-cart-btn">Add to Cart</button>
+              <img src="images/lion.webp" alt="lion">
+              <h4>Lion</h4>
+              <div class="priceAndCart">
+              <p class="priceCat">SAR 55</p>
+              <div class="quantity-controls">
+                <button class="minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="plus-btn">+</button>
+             </div>
+            </div>
+            </div>
+
+            <div class="categoriesOption ">
+              <button class="add-to-cart-btn">Add to Cart</button>
+              <img src="images/educational toy.webp" alt="educational toy">
+              <h4>Educational Toy</h4>
+              <div class="priceAndCart">
+              <p class="priceCat">SAR 115</p>
+              <div class="quantity-controls">
+                <button class="minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="plus-btn">+</button>
+             </div>
+            </div>
+            </div>
+
+           <div class="categoriesOption ">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <img src="images/Action Figure.webp" alt="superman">
+                <h4>Action Figure</h4>
+                <div class="priceAndCart">
+                <p class="priceCat">SAR 87</p>
+                  <div class="quantity-controls">
+                    <button class="minus-btn">-</button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">+</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="categoriesOption ">
+              <button class="add-to-cart-btn">Add to Cart</button>
+              <img src="images/teddy bear.webp" alt="teddy Bear">
+              <h4>Teddy Bear</h4>
+              <div class="priceAndCart">
+                <p class="priceCat">SAR 89</p>
+                <div class="quantity-controls">
+                  <button class="minus-btn">-</button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">+</button>
+               </div>              
+              </div>
+            </div>
+
+            <div class="categoriesOption ">
+              <button class="add-to-cart-btn">Add to Cart</button>
+                <img src="images/truck.webp" alt="truck">
+                <h4>Truck</h4>
+                <div class="priceAndCart">
+                  <p class="priceCat">SAR 80</p>
+                  <div class="quantity-controls">
+                    <button class="minus-btn">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus-btn">+</button>
+                 </div>
+                 </div>
+            </div>
+         </div>
+
+         <button id="myCartButton">My Cart</button>
+
+         <footer>
+            <div class="footer-section">
+              <img src="images/wide-logo.png" alt="Logo" width="118">
+              <p>Your Future of Shopping Starts Wide.</p>
+            </div>
+            <div class="footer-section social-media">
+              <h3>SOCIAL MEDIA</h3>
+              <ul class="social-icons">
+                <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/insta.png" alt="Instagram"></a></li>
+                <li>@official_wide</li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-us">
+                    <h3>CONTACT US</h3>
+                    <ul>
+                        <li><a href="#"><img src="images/phone1.png" alt="Phone"> +123 165 788</a></li>
+                        <li><a href="mailto:@wide@gmail.com"><img src="images/email1.png" alt="Email"> wide@gmail.com</a></li>
+              </ul>
+              
+            </div>
+            
+          </footer>
+           <div class="bottom-bar">
+                      <p>  Terms and Conditions<br>
+          privacy policy<br>&copy; 2024 wide company . All rights reserved</p>
+                  </div>
+              
+                  <script src="scriptCat.js"></script>
+</body>
+
+</html>
+

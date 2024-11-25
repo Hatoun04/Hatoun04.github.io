@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wide Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="homescrip.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header>
+    <div class="header">
+        <div class="logo-section">
+            <div class="horizontal-line"></div>
+            <div class="logo">
+                <a href="widehomebage.html">
+                    <img src="images/wide-logo.png" alt="Wide Marketplace Logo" id="logo">
+                </a>
+            </div>
+            <div class="horizontal-line"></div>
+        </div>
+    </div>
+
+    <!-- Links Section (Icons on the left, Navigation on the right) -->
+    
+	<nav class="link-section">
+        <!-- Left section (Icons: Cart, Seller, User) -->
+        <div class="icons">
+          <a href="cart.html">
+    <img src="images/cart.png" alt="Cart" id="cart-icon">
+    <p>Cart</p>
+   </a>
+
+     <a href="sellerPage.html">
+    <img src="images/user.png" alt="Seller" id="seller-icon">
+    <p>Seller</p>
+     </a>
+
+    <a href="userPage.html">
+    <img src="images/user.png" alt="User"  id="user-icon">
+    <p>User</p>
+     </a>
+     <button class="theme-toggle-btn" onclick="toggleTheme()">Dark Mood</button>
+
+     
+        </div>
+
+        <!-- Right section (Navigation Links) -->
+     <div class="nav-links">
+      <ul> 
+        <li><a href="electronics.html">ELECTRONICS</a> </li>
+        <li><a href="toys.html">TOYS</a> </li>
+        <li> <a href="food.html">FOOD</a></li>     
+      </ul> 
+     </div>
+    </nav>
+	 </header>
+
+     
+	 <div>
+	 <p class="welcome">✦ WELCOME ✦</p></div>
+	    <p id="week-start-date"></p>
+        <p class="spe">special offers</p>
+        
+	<div class="pic">
+    <div class="offer">
+      <img src="images/image1.png" alt="Image 1">
+      <h3>great sale</h3>
+	  <p>Digital Camera, Pink!<br>get ready for Jan 10-19</p>
+    </div>
+    
+	<div class="offer ">
+      <img src="images/image2.png" alt="Image 2">
+      <h3>free delivery</h3>
+	  	  <p>Stay tuned for free delivery <br>on upcoming orders!</p>
+    
+    </div>
+    <div class="offer ">
+        <img src="images/image3.png" alt="Image 3">
+<h3>Discount on Toys!</h3>
+<p>Save 40% on select toys!<br>Shop now for great deals!</p>
+    </div>
+    
+	<div class="offer more-offer">
+      <img src="images/image4.png" alt="Image 4">
+      <h3>Best Discount on Potato Chips</h3>
+      <p>Get 50% off on a variety of crispy and delicious Potato Chips!</p>
+    </div>
+    
+    <div class="offer more-offer">
+      <img src="images/image5.png" alt="Image 5">
+      <h3>best discount</h3>
+      <p>Wireless on-ear headphones now available<br>  with 40%off</p>
+    </div>
+	
+    <div class="offer more-offer">
+      <img src="images/image6.png" alt="Image 6">
+      <h3>spacial 50% off</h3>
+      <p>Buy Freeze Dried Mangos + Organic Sugar <br> and receive many other attractive prizes</p>
+    </div>
+
+	 </div>
+         <button id="show-more-btn" onclick="showMoreOffers()">More</button>
+
+	 
+	 <div class="vision-section">
+	<div class="linevision">
+	<span class="line"></span>
+	<h2>Our vision</h2> 
+		<span class="line"></span>
+     </div>
+    <p>At <span class="highlight">Wide</span>, our vision is to revolutionize the shopping experience by offering a platform that makes discovering and purchasing <br>products effortless
+	enjoyable, and seamless, We aim to provide a diverse range of high-quality products<br> ensuring that every buyer
+	finds exactly what they need with ease By combining convenience, variety, and<br> personalized recommendations
+	we strive to create a shopping experience that feels natural<br> fun, and tailored to each individual</p>
+   
+</div>
+<img src="images/WIDE.png" alt="Wide Vision" class="vision-image">
+  <p class="CATEGORISWORD">「  CATEGORIS  」</p>
+
+  <div class="categories">
+    <!-- Electronics Category -->
+    <a href="electronics.html">
+        <div class="category-card">
+            <img src="images/electronics.png" alt="Electronics">
+            <p>Electronics</p>
+        </div>
+    </a>
+
+    <!-- Toys Category -->
+    <a href="toys.html">
+        <div class="category-card">
+            <img src="images/toys.png" alt="Toys">
+            <p>Toys</p>
+        </div>
+    </a>
+
+    <!-- Food Category -->
+    <a href="food.html">
+        <div class="category-card">
+            <img src="images/food.png" alt="Food">
+            <p>Food</p>
+        </div>
+    </a>
+</div>
+<p class="REVIEWS">🌸REVIEWS🌸</p>
+
+<div class="carousel-container">
+    <div class="carousel-box">
+        <!-- Review 1 -->
+        <div class="review" data-customer="Rana" data-product="Freeze Dried Strawberries" data-rate="★★★★★" data-feedback="Absolutely loved it! Super fresh and tasty. Can't wait to order it again next time!">
+            <img src="images/stro.png" alt="Rana">
+            <h3>Rana</h3>
+            <div class="product-name">Freeze Dried Strawberries</div>
+            <div class="stars">★★★★★</div>
+            <p>"Absolutely loved it! Super fresh and tasty. Can't wait to order it again next time!"</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review" data-customer="Fahad" data-product="Lego Building Set" data-rate="★★★★☆" data-feedback="My son loves this set! He’s been building nonstop, and it’s his new favorite thing!">
+            <img src="images/lego.png" alt="Fahad">
+            <h3>Fahad</h3>
+            <div class="product-name">Lego Building Set</div>
+            <div class="stars">★★★★☆</div>
+            <p>"My son loves this set! He’s been building nonstop, and it’s his new favorite thing!”</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review" data-customer="Lojain" data-product="Smartphone X" data-rate="★★★★★" data-feedback="The best phone I've ever used. looks amazing, and the camera is just next level.">
+            <img src="images/phone.png" alt="Lojain">
+            <h3>Lojain</h3>
+            <div class="product-name">Smartphone X</div>
+            <div class="stars">★★★★★</div>
+            <p>"The best phone I've ever used. looks amazing, and the camera is just next level."</p>
+        </div>
+    </div>
+</div>
+
+<div id="hover-info" style="display: none; position: absolute; background: #ffe4f2; border: 1px solid #ccc; padding: 10px; border-radius: 5px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    <div id="customer-name" style="font-weight: bold; color: #df0b8a;"></div>
+    <div id="product-name" style="color: #df0b8a;"></div>
+    <div id="product-rate" style="color: gold;"></div>
+    <div id="product-feedback" style="margin-top: 5px; color: #d684ba;"></div>
+</div>
+<footer>
+  <div class="footer-section">
+    <img src="images/wide-logo.png" alt="Logo" width="118">
+    <p>Your Future of Shopping Starts Wide.</p>
+  </div>
+  <div class="footer-section social-media">
+    <h3>SOCIAL MEDIA</h3>
+    <ul class="social-icons">
+      <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+      <li><a href="#"><img src="images/insta.png" alt="Instagram"></a></li>
+      <li>@official_wide</li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-us">
+                    <h3>CONTACT US</h3>
+                    <ul>
+                        <li><a href="#"><img src="images/phone1.png" alt="Phone"> +123 165 788</a></li>
+                        <li><a href="mailto:@wide@gmail.com"><img src="images/email1.png" alt="Email"> wide@gmail.com</a></li>
+    </ul>
+    
+  </div>
+  
+</footer>
+ <div class="bottom-bar">
+            <p>  Terms and Conditions<br>
+privacy policy<br>&copy; 2024 wide company . All rights reserved</p>
+        </div>
+</body>
+</html>
