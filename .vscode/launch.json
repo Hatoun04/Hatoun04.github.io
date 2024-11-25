@@ -1,15 +1,12 @@
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    {
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "name": "Run Current File", // Name the configuration as "Run Current File"
-                "type": "chrome",
-                "request": "launch",
-                "file": "${file}", // This tells VS Code to run the currently open file
-                "webRoot": "/Users/hatoun/web project/web-2/web" // This is your project's web root
-            }
-        ]
-    }
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Current File", // Name the configuration as "Run Current File"
+            "type": "chrome",
+            "request": "launch",
+            "file": "${file}", // This tells VS Code to run the currently open file
+            "webRoot": "/Users/hatoun/Documents/GitHub/web project repositry" // Updated web root path
+        }
+    ]
+}
