@@ -68,31 +68,36 @@ function showMoreOffers() {
 document.addEventListener("DOMContentLoaded", () => {
     const reviews = document.querySelectorAll(".review");
     const hoverInfo = document.getElementById("hover-info");
-  
+
     reviews.forEach(review => {
-      review.addEventListener("mouseover", event => {
-        const customer = review.dataset.customer;
-        const product = review.dataset.product;
-        const rate = review.dataset.rate;
-        const feedback = review.dataset.feedback;
-  
-        document.getElementById("customer-name").textContent = customer;
-        document.getElementById("product-name").textContent = product;
-        document.getElementById("product-rate").textContent = rate;
-        document.getElementById("product-feedback").textContent = feedback;
-  
-        hoverInfo.style.display = "block";
-        hoverInfo.style.top = `${event.pageY + 10}px`;
-        hoverInfo.style.left = `${event.pageX + 10}px`;
-      });
-  
-      review.addEventListener("mousemove", event => {
-        hoverInfo.style.top = `${event.pageY + 10}px`;
-        hoverInfo.style.left = `${event.pageX + 10}px`;
-      });
-  
-      review.addEventListener("mouseout", () => {
-        hoverInfo.style.display = "none";
-      });
+        review.addEventListener("mouseover", event => {
+            const customer = review.dataset.customer;
+            const product = review.dataset.product;
+            const rate = review.dataset.rate;
+            const feedback = review.dataset.feedback;
+
+            // Populate hover box
+            document.getElementById("hover-customer").textContent = `Customer: ${customer}`;
+            document.getElementById("hover-product").textContent = `Product: ${product}`;
+            document.getElementById("hover-rate").textContent = `Rating: ${rate}`;
+            document.getElementById("hover-feedback").textContent = `Feedback: ${feedback}`;
+
+            // Position and display hover box
+            hoverInfo.style.display = "block";
+            hoverInfo.style.top = `${event.pageY + 10}px`;
+            hoverInfo.style.left = `${event.pageX + 10}px`;
+        });
+
+        review.addEventListener("mousemove", event => {
+            // Update position of hover box
+            hoverInfo.style.top = `${event.pageY + 10}px`;
+            hoverInfo.style.left = `${event.pageX + 10}px`;
+        });
+
+        review.addEventListener("mouseout", () => {
+            // Hide hover box
+            hoverInfo.style.display = "none";
+        });
     });
-  });
+});
+
